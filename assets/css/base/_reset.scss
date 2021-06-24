@@ -1,0 +1,94 @@
+@import 'variables';
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    transition: .5s;
+}
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+.btn{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0 20px;
+    line-height: 40px;
+    color: $white;
+    border-radius: 5px;
+    border: transparent;
+    &.btn-primary {
+        background-color: $btn_back;
+         &:hover {
+             background: none;
+             border: 2px solid #fc482c;
+         }
+    }
+    &.btn-outline {
+        border: 2px solid #fc482c;
+        &:hover {
+            background-color: $btn_back;
+        }
+    }
+}
+
+
+
+/* Text Align */
+
+$align: left,center,right,justify;
+@each $i in $align {
+    .text-#{$i}{
+        text-align: $i;
+    }
+}
+/* flex css */
+/* 1. display-flex */
+$flex: flex,inline-flex;
+@each $i in $flex {
+    .d-#{$i}{
+        display: $i;
+    }
+}
+/* justify-content */
+//   "justify-content": (
+//       property: justify-content,
+//       values: (start: flex-start,
+//           end: flex-end,
+//           center: center,
+//           between: space-between,
+//           around: space-around,
+//           evenly: space-evenly,
+//       ));
+
+
+$justify: flex-start,flex-end,center,space-between,space-around;
+@each $i in $justify {
+    .justify-content-#{$i} {
+        justify-content: $i;
+    }
+}
+/* align-items */
+$align-items: flex-start,flex-end,center,baseline,stretch;
+@each $i in $align-items {
+    .align-items-#{$i} {
+        align-items: $i;
+    }
+}
