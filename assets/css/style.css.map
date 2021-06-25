@@ -14,7 +14,8 @@
         "utils/_functions.scss",
         "layout/_all.scss",
         "layout/_header.scss",
-        "layout/_banner.scss"
+        "layout/_banner.scss",
+        "layout/_about.scss"
     ],
     "names": [],
     "file": "style.css"

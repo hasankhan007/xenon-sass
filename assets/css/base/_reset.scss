@@ -61,7 +61,7 @@ img{
     }
 
     .pb-#{$i * 10}{
-        padding-bottom: $i * 10px;
+        padding-bottom: $i * 10px; 
     }
     .m-#{$i * 10}{
         margin: $i * 10px;
