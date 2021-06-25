@@ -33,7 +33,7 @@ img{
     line-height: 40px;
     color: $white;
     border-radius: 5px;
-    border: transparent;
+    border: 1px solid #fc482c;
     &.btn-primary {
         background-color: $btn_back;
          &:hover {
@@ -49,7 +49,30 @@ img{
     }
 }
 
+/* Padding margine */
 
+@for $i from 1 through 10 {
+    .p-#{$i * 10}{
+        padding: $i * 10px;
+    }
+
+    .pt-#{$i * 10}{
+        padding-top: $i * 10px;
+    }
+
+    .pb-#{$i * 10}{
+        padding-bottom: $i * 10px;
+    }
+    .m-#{$i * 10}{
+        margin: $i * 10px;
+    }
+    .mt-#{$i * 10}{
+        margin-top: $i * 10px;
+    }
+    .mb-#{$i * 10}{
+        margin-bottom: $i * 10px;
+    }
+}
 
 /* Text Align */
 
