@@ -1,0 +1,25 @@
+.services-area{
+    background-color: $bg-gray;
+    .single-service{
+        background-color: $white;
+        padding: 25px;
+        margin-bottom: 50px;
+        i{
+            color: $white;
+            font-size: 20px;
+            background-color: $common;
+            padding: 20px;
+            cursor: pointer;
+            transition: 1s;
+            &:hover{
+                border-radius: 50%;
+            }
+        }
+        h4{
+
+        }
+        p{
+
+        }
+    }
+}

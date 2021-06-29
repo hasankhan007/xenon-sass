@@ -542,6 +542,46 @@ h1, h2, h3, h4, h5, h6 {
 
 /* from css/utils/_all.scss */
 /* from css/layout/_all.scss */
+.section-title {
+  margin-bottom: 50px;
+}
+
+.section-title h4 {
+  position: relative;
+  display: inline-block;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.section-title h4::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: #fc482c;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.section-title h4::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fc482c;
+  bottom: -4px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 header {
   position: absolute;
   top: 0;
@@ -616,5 +656,54 @@ header .menu ul li a:hover {
   margin: 10px;
   -webkit-transition: .5s;
   transition: .5s;
+}
+
+.about-area .about-content h2 {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: bold;
+  color: #fc482c;
+}
+
+.about-area .about-content h4 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.about-area .about-content ul li {
+  font-size: 18px;
+}
+
+.about-area .about-content ul li i {
+  margin-right: 5px;
+  color: #fc482c;
+}
+
+.about-area .about-content a:hover {
+  color: #fc482c;
+}
+
+.services-area {
+  background-color: #f6f6f6;
+}
+
+.services-area .single-service {
+  background-color: #fff;
+  padding: 25px;
+  margin-bottom: 50px;
+}
+
+.services-area .single-service i {
+  color: #fff;
+  font-size: 20px;
+  background-color: #fc482c;
+  padding: 20px;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.services-area .single-service i:hover {
+  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */
