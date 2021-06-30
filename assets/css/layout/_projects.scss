@@ -1,0 +1,56 @@
+.project-area{
+    .single-project{
+        height: 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 40px;
+         &:hover {
+             .project-content{
+                opacity: 1;
+                visibility: visible;
+                transform: scale(1);
+             }
+         }
+
+        .project-content{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+            z-index: 2;
+            position: relative;
+            opacity: 0;
+            visibility: hidden;
+            cursor: pointer;
+            transition: .5s;
+            transform: scale(0);
+
+            &::before{
+                position: absolute;
+                content: "";
+                height: 100%;
+                width: 100%;
+                left: 0;
+                top: 0;
+                background-color: #333;
+                opacity: 0.75;
+                z-index: -2;
+            }
+            a{
+                color: $white;
+                font-size: 28px;
+            }
+            h4{
+                font-size: 20px;
+                text-align: center;
+                span{
+                    display: block;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
