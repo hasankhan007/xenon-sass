@@ -775,4 +775,24 @@ header .menu ul li a:hover {
   display: block;
   font-size: 16px;
 }
+
+.counter-area {
+  background-color: #000;
+  color: #fc482c;
+}
+
+.counter-area .single-counter {
+  text-align: center;
+}
+
+.counter-area .single-counter i {
+  font-size: 20px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.counter-area .single-counter h4 {
+  font-size: 40px;
+}
 /*# sourceMappingURL=style.css.map */

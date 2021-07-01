@@ -1,0 +1,16 @@
+.counter-area{
+    background-color: $black;
+    color: $common;
+    .single-counter{
+        text-align: center;
+        i{
+            font-size: 20px;
+            background-color: $white;
+            padding: 15px;
+            border-radius: 50%;
+        }
+        h4{
+            font-size: 40px;
+        }
+    }
+}
