@@ -795,4 +795,62 @@ header .menu ul li a:hover {
 .counter-area .single-counter h4 {
   font-size: 40px;
 }
+
+.timeline-area .timeline-list {
+  position: relative;
+}
+
+.timeline-area .timeline-list::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: #fc482c;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.timeline-area .timeline-list li {
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline-area .timeline-list li::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #fc482c;
+  border-radius: 50%;
+}
+
+.timeline-area .timeline-list li:nth-child(even) .timeline-content {
+  float: right;
+  text-align: left;
+}
+
+.timeline-area .timeline-list li .timeline-content {
+  width: 45%;
+  border: 2px solid #fc482c;
+  text-align: right;
+  padding: 20px;
+  float: left;
+}
+
+.timeline-area .timeline-list li .timeline-content span {
+  color: #fc482c;
+  font-weight: bold;
+}
+
+.timeline-area .timeline-list li .timeline-content h4 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
 /*# sourceMappingURL=style.css.map */
