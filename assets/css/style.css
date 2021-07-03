@@ -36,6 +36,10 @@ img {
   clear: both;
 }
 
+.mx-auto {
+  margin: 0 auto;
+}
+
 .btn {
   display: inline-block;
   font-size: 20px;
@@ -852,5 +856,134 @@ header .menu ul li a:hover {
   font-size: 25px;
   font-weight: bold;
   margin: 10px 0;
+}
+
+.testimonial-area {
+  background-color: #333;
+  color: #fc482c;
+}
+
+.testimonial-area .testimonials .single-testimonial {
+  color: #fff;
+  text-align: center;
+}
+
+.testimonial-area .testimonials .single-testimonial img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin: 0 auto;
+}
+
+.testimonial-area .testimonials .single-testimonial h4 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.testimonial-area .testimonials .single-testimonial span {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fc482c;
+}
+
+.testimonial-area .testimonials .slick-arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border: none;
+  background: transparent;
+}
+
+.testimonial-area .testimonials .slick-arrow i {
+  background-color: #fc482c;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.testimonial-area .testimonials .slick-prev {
+  left: -50px;
+}
+
+.testimonial-area .testimonials .slick-next {
+  right: -50px;
+}
+
+.testimonial-area .testimonials .slick-dots {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 30px;
+}
+
+.testimonial-area .testimonials .slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.testimonial-area .testimonials .slick-dots li.slick-active button {
+  background-color: tomato;
+  color: #fff;
+}
+
+.testimonial-area .testimonials .slick-dots li button {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.price-section {
+  background-color: #f6f6f6;
+}
+
+.price-section .single-price {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.price-section .single-price.active {
+  border: 5px solid #fc482c;
+}
+
+.price-section .single-price span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.price-section .single-price h4 {
+  font-size: 40px;
+  font-weight: 800;
+  margin: 15px 0;
+}
+
+.price-section .single-price ul {
+  margin-bottom: 20px;
+}
+
+.price-section .single-price ul li {
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 2px solid #f2f2f2;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.price-section .single-price ul li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.price-section .single-price a:hover {
+  color: #fc482c;
 }
 /*# sourceMappingURL=style.css.map */

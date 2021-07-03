@@ -25,6 +25,9 @@ img{
     height: 0;
     clear: both;
 }
+.mx-auto{
+    margin: 0 auto;
+}
 .btn{
     display: inline-block;
     font-size: 20px;
@@ -61,7 +64,7 @@ img{
     }
 
     .pb-#{$i * 10}{
-        padding-bottom: $i * 10px; 
+        padding-bottom: $i * 10px;
     }
     .m-#{$i * 10}{
         margin: $i * 10px;
