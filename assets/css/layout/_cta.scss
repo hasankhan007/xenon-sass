@@ -1,0 +1,48 @@
+.cta-area{
+    text-align: center;
+    color: $white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+
+       &::before {
+           position: absolute;
+           content: "";
+           width: 100%;
+           height: 100%;
+           top: 0;
+           left: 0;
+           background-color: rgba(0,0,0,.7);
+           z-index: -2;
+       }
+       .cta-content{
+        a{
+            color: $white;
+            font-size: 80px;
+             margin-bottom: 10px;
+            i {
+
+            }
+        }
+
+        h4 {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        p {
+             font-size: 18px;
+             font-weight: bold;
+             margin-bottom: 10px;
+        }
+       }
+
+    a{
+        &:hover{
+            color: $common;
+        }
+    }
+}

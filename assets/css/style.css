@@ -986,4 +986,224 @@ header .menu ul li a:hover {
 .price-section .single-price a:hover {
   color: #fc482c;
 }
+
+.team-area .single-team {
+  position: relative;
+  overflow: hidden;
+}
+
+.team-area .single-team:hover .team-overlay {
+  bottom: 0;
+}
+
+.team-area .single-team img {
+  width: 100%;
+}
+
+.team-area .single-team .team-overlay {
+  position: absolute;
+  left: 0;
+  bottom: -136px;
+  width: 100%;
+  padding: 20px 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.team-area .single-team .team-overlay h4 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.team-area .single-team .team-overlay h4 span {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.team-area .single-team .team-overlay a {
+  margin: 0 5px;
+  color: #fc482c;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.team-area .single-team .team-overlay a:hover {
+  color: #fff;
+}
+
+.blog-area {
+  background-color: #f6f6f6;
+}
+
+.blog-area .single-blog {
+  text-align: center;
+  background-color: #fff;
+}
+
+.blog-area .single-blog:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.blog-area .single-blog .blog-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-area .single-blog .blog-image img {
+  width: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.blog-area .single-blog .blog-meta {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+  padding: 10px;
+  z-index: 2;
+  margin-top: -30px;
+  border-radius: 10px;
+}
+
+.blog-area .single-blog .blog-meta a {
+  color: #333;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.blog-area .single-blog .blog-meta a:hover {
+  color: #fc482c;
+}
+
+.blog-area .single-blog .blog-content {
+  padding: 20px 0;
+}
+
+.blog-area .single-blog .blog-content h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.blog-area .single-blog .blog-content p {
+  margin-bottom: 10px;
+}
+
+.blog-area .single-blog .blog-content a:hover {
+  color: #fc482c;
+}
+
+.cta-area {
+  text-align: center;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.cta-area::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -2;
+}
+
+.cta-area .cta-content a {
+  color: #fff;
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.cta-area .cta-content h4 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cta-area .cta-content p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cta-area a:hover {
+  color: #fc482c;
+}
+
+.contact-area .contact-form form input,
+.contact-area .contact-form form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #f2f2f2;
+}
+
+.contact-area .contact-form form input[type='submit'] {
+  background-color: #fc482c;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-area .contact-form form input[type='submit']:hover {
+  background-color: tomato;
+}
+
+.contact-area .contact-address .single-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact-area .contact-address .single-contact:last-child {
+  margin-bottom: 0;
+}
+
+.contact-area .contact-address .single-contact i {
+  background-color: tomato;
+  color: #fff;
+  padding: 12px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.contact-area .contact-address .single-contact h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contact-area .contact-address .single-contact h4 span {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: lowercase;
+  margin-top: 5px;
+}
 /*# sourceMappingURL=style.css.map */

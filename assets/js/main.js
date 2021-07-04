@@ -8,6 +8,11 @@
              enabled: true
          }
      });
+     /* video magnific popup */
+     $('.video').magnificPopup({
+        type: 'iframe'
+
+     });
 
      /* counterup activation */
      $('.counter').counterUp();
