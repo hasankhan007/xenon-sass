@@ -29,6 +29,16 @@ img {
   vertical-align: middle;
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 0;
+}
+
 .clearfix::after {
   content: "";
   display: block;
@@ -594,6 +604,8 @@ header {
   z-index: 9999;
   color: #fff;
   padding: 20px 0;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 header .logo a {
@@ -604,8 +616,16 @@ header .logo a {
   font-weight: bold;
 }
 
+header .logo a:hover {
+  color: #fc482c;
+}
+
 header a {
   color: #fff;
+}
+
+header .menu ul li.current a {
+  color: #fc482c;
 }
 
 header .menu ul li a {
@@ -1205,5 +1225,84 @@ header .menu ul li a:hover {
   font-weight: 500;
   text-transform: lowercase;
   margin-top: 5px;
+}
+
+.top-back a {
+  background-color: #fc482c;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: right;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  -webkit-transition: 1s;
+  transition: 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.social-btn {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 50px;
+  height: 200px;
+  background: transparent;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-btn a {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: tomato;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 5px 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.social-btn a:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 /*# sourceMappingURL=style.css.map */

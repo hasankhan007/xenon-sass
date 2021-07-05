@@ -1,0 +1,22 @@
+.top-back{
+   
+    a{
+        background-color: $common;
+        color: $white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        text-align: right;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+        transition: 1s;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+}

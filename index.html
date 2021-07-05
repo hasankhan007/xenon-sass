@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header class="header-area">
+    <header class="header-area" id="sticky-header"> <!-- sticky header -->
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-3">
@@ -21,12 +21,15 @@
                 </div>
                 <div class="col-xl-9">
                     <div class="menu">
-                        <ul class="d-flex justify-content-flex-end">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Services</a></li>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">Contact</a></li>
+                        <!-- onepage nav smooth scroll id="nav" -->
+                        <ul id="nav" class="d-flex justify-content-flex-end">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -51,7 +54,7 @@
         </div>
     </section>
      <!-- About Area -->
-     <section class="about-area pt-100 pb-100">
+     <section class="about-area pt-100 pb-100" id="about">
          <div class="container">
              <div class="row align-items-center">
                  <div class="col-xl-4">
@@ -95,7 +98,7 @@
          </div>
      </section>
      <!-- services Area -->
-     <div class="services-area pt-100 pb-100">
+     <div class="services-area pt-100 pb-100" id="services">
          <div class="container">
              <div class="row">
                  <div class="col-xl-12 text-center">
@@ -153,7 +156,7 @@
          </div>
      </div>
      <!-- Project Area -->
-     <section class="project-area pt-100 pb-100">
+     <section class="project-area pt-100 pb-100" id="projects">
          <div class="container">
              <div class="row">
                  <div class="col-xl-12 text-center">
@@ -414,7 +417,7 @@
         </div>
      </section>
      <!-- Team Section -->
-     <section class="team-area pt-100 pb-100">
+     <section class="team-area pt-100 pb-100" id="team">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 text-center">
@@ -471,7 +474,7 @@
         </div>
      </section>
      <!-- Blog Section -->
-     <section class="blog-area pt-100 pb-100">
+     <section class="blog-area pt-100 pb-100" id="blog">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 text-center">
@@ -556,7 +559,7 @@
         </div>
      </section>
      <!-- contact section -->
-     <section class="contact-area pt-100 pb-100">
+     <section class="contact-area pt-100 pb-100" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 text-center">
@@ -602,6 +605,26 @@
         </div>
      </section>
 
+     <!-- Back to to Button -->
+     <div class="top-back">
+         <a href="" class="top"><i class="fas fa-arrow-up"></i></a>
+     </div>
+     <!-- Back to to Button -->
+      <!-- social media Button -->
+      <div class="social-btn socialBtn">
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-linkedin-in"></i></a>
+        <a href=""><i class="fab fa-youtube"></i></a>
+      </div>
+
+      <div class="preloader">
+       
+        <img src="assets/image/preloader/Spinner-1s-200px.svg" alt="">
+
+      </div>
+
+
 
 
      <!-- <script src="assets/js/jquery-3.6.0.js"></script> -->
@@ -610,6 +633,7 @@
      <script src="assets/js/waypoints.min.js"></script>
      <script src="assets/js/jquery.counterup.min.js"></script>
      <script src="assets/js/slick.min.js"></script>
+     <script src="assets/js/jquery.nav.js"></script>
      <script src="assets/js/main.js"></script>
 </body>
 </html>

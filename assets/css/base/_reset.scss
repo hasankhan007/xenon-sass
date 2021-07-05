@@ -19,6 +19,14 @@ img{
     height: auto;
     vertical-align: middle;
 }
+.sticky{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,.7);
+    padding: 10px 0;
+}
 .clearfix::after{
     content: "";
     display: block;
@@ -50,6 +58,10 @@ img{
             background-color: $btn_back;
         }
     }
+}
+
+.preloader{
+    
 }
 
 /* Padding margine */

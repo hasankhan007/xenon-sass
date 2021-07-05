@@ -6,12 +6,18 @@ header{
    z-index: 9999;
     color: $white;
     padding: 20px 0;
-    .logo a{
-        display: inline-block;
-        border: 1px solid $white;
-        padding: 5px 10px;
-        font-size: 18px;
-        font-weight: bold;
+    transition: 1s;
+    .logo{
+        a {
+            display: inline-block;
+            border: 1px solid $white;
+            padding: 5px 10px;
+            font-size: 18px;
+            font-weight: bold;
+            &:hover {
+                color: $link_hover;
+            }
+        }
     }
     a{
         color: $white;
@@ -19,6 +25,9 @@ header{
     .menu{
         ul{
             li{
+                &.current a{
+                    color: $link_hover;
+                }
                 a{
                     display: block;
                     font-size: 18px;
