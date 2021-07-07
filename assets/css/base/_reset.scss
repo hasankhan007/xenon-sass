@@ -6,6 +6,7 @@
 }
 html {
     scroll-behavior: smooth;
+    font-size: 1rem;
 }
 a{
     text-decoration: none;
@@ -61,8 +62,34 @@ img{
 }
 
 .preloader{
-    
+
 }
+/* headroom.js, css for sticky header
+.headroom {
+    transition: transform .25s ease-in-out;
+    will-change: transform;
+}
+
+.headroom--pinned {
+    display: block;
+    transform: translateY(0);
+}
+
+.header--fixed {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    top: 0;
+
+}
+
+.headroom--unpinned {
+
+    transform: translateY(-100%);
+}
+
+*/
 
 /* Padding margine */
 
