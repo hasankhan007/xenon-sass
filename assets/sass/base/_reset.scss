@@ -3,6 +3,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    border: none;
+    outline: none;
 }
 html {
     scroll-behavior: smooth;
@@ -17,8 +19,9 @@ ul{
 }
 img{
     max-width: 100%;
+    display: block;
     height: auto;
-    vertical-align: middle;
+  
 }
 .sticky{
     position: sticky;

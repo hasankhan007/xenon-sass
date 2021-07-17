@@ -473,7 +473,7 @@ h1, h2, h3, h4, h5, h6 {
 /* xxl */
 @media (min-width: 1400px) {
   .container {
-    width: 1320px;
+    width: 1320px; 
   }
   .col-xxl-1 {
     width: 8.33333%;
